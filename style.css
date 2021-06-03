@@ -37,3 +37,17 @@ body
     text-align: left;
     font-size: 18px;
 }
+
+#start, #restart
+{
+    font-size: 18px;
+}
+
+#copy-right-footer
+{
+    background-color: grey;
+    color: white;
+    line-height: 2;
+    margin-bottom: 0px;
+}
+
