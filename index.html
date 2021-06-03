@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <title>Ping Pong</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="ping-pong.jpg">
+<center>
+  <div class="btn btn-primary heading">
+  <h3>Ping Pong</h3>
+  <button class="btn btn-primary" data-toggle ="modal"  data-target = "#myModal">Instructions</button>
+</div>
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h4>Instructions</h4>
+        </div>
+        <div class="modal-body">
+            1. Keep your laptop straight
+            <br>
+            2. Move yourself 3-4 feet away from your screen 
+            <br>
+            3. Move your right wrist up and down to control the red paddel which is yours
+            <br>
+            4. Click play and move 3-4 feet away from the laptop
+        </div>
+    </div>
+  </div>
+</div>   
+<br><br>
+<button class="btn btn-success" onclick="startGame()" id="start">Play Game</button>
+<br><br>
+<h4 class="btn btn-warning" id="status"></h4>
+<br><br>
+<div id="canvas"></div>
+  
